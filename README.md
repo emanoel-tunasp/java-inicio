@@ -1,2 +1,8 @@
 # java-inicio
-leitura de dados 18/03/22
+Operadores comparativos
+> maior
+< menor
+>= maior ou igual
+<= menor ou igual
+== igual
+!= diferente
