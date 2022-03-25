@@ -1,5 +1,4 @@
 
-
 import java.util.Scanner;
 
 public class PLANO1XXT {
@@ -7,28 +6,15 @@ public class PLANO1XXT {
 	public static void main(String[] args) {
 
 		Scanner leitor = new Scanner(System.in);
-	int numero;
-System.out.println("POSITIVO OU NEGATIVO");
-numero=leitor.nextInt();
+		System.out.println("=====IMPAR OU PAR=====");
+		System.out.println("Digite um numero");
+		int numero = leitor.nextInt();
 
-if(numero >= 0 ) {
-	System.out.println(" e POSITIVO");
-}
-
-else {
-	if(numero <0 ) 
-		System.out.println(" e NEGATIVO");
-}
-
-
-
-
-
-
-
-
-
-
+		if (numero % 2 == 0) {
+			System.out.println("PAR");
+		} else {
+			System.out.println("IMPAR");
+		}
 
 		leitor.close();
 	}
