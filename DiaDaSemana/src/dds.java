@@ -3,25 +3,35 @@ import java.util.Scanner;
 public class dds {
 
 	public static void main(String[] args) {
-		Scanner dds = new  Scanner(System.in);
+		Scanner dds = new Scanner(System.in);
 		int x = dds.nextInt();
-		String dia ;
-		if(x==1) {
+		String dia;
+
+		switch (x) {
+		case 1:
 			dia = "domingo";
-		}else if (x==2) {
+			break;
+		case 2:
 			dia = "segunda";
-		}else if (x==3) {
+			break;
+		case 3:
 			dia = "terça";
-		}else if (x==4) {
+			break;
+		case 4:
 			dia = "quarta";
-		}else if (x==5) {
+			break;
+		case 5:
 			dia = "quinta";
-		}else if (x==6) {
+			break;
+		case 6:
 			dia = "sexta";
-		}else if (x==7) {
+			break;
+		case 7:
 			dia = "sabado";
-		}else {
-			dia ="valor invalido";
+			break;
+		default:
+			dia = "valor invalido";
+			break;
 		}
 		System.out.println("Dia  da semana :  " + dia);
 		dds.close();
