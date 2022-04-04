@@ -6,3 +6,4 @@ Operadores comparativos
 <= menor ou igual
 == igual
 != diferente
+/
