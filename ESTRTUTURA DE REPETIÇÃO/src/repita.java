@@ -4,15 +4,13 @@ public class repita {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		int mask = 0b00100000;
+		int n = sc.nextInt();
 
-		int x = sc.nextInt();
-
-		for (int i = 1; i <= x; i++) {
-
-			if (i % 2 != 0) {
-
-				System.out.println(i);
-			}
+		if ((n & mask) != 0) {
+			System.out.println("6 th bit is true !");
+		} else {
+			System.out.println("6th bit is false!");
 
 		}
 
