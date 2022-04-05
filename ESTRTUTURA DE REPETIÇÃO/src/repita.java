@@ -3,10 +3,18 @@ import java.util.Scanner;
 public class repita {
 
 	public static void main(String[] args) {
-		for (int i = 0; i < 5; i++) {
-			System.out.println("Valor de i:  " + i);
+		Scanner sc = new Scanner(System.in);
+
+		int x = sc.nextInt();
+
+		for (int i = 1; i <= x; i++) {
+
+			if (i % 2 != 0) {
+
+				System.out.println(i);
+			}
+
 		}
 
 	}
-
 }
