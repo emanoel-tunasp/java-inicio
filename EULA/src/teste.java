@@ -5,24 +5,25 @@ import java.util.Scanner;
 public class teste {
 
 	public static void main(String[] args) {
+        
+		
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-
-		System.out.println("Digite largura:");
-
-		double largura = sc.nextDouble();
-		System.out.println("Digite comprimento:");
-		double comprimento = sc.nextDouble();
-		System.out.println("Digite metroQuadrado:");
-		double metroQuadrado = sc.nextDouble();
-
-		double area = largura * comprimento;
-		double preco = area * metroQuadrado;
-
-		System.out.printf("AREA = %.2f%n", + area);
-		System.out.printf("PRECO= %.2f%n", + preco);
-
+		System.out.println("DIGITE QUANTOS MINUTOS VOCÊ UTILIZOU :");
+		int minutos = sc.nextInt();
+		double conta = 50.0;
+		
+		if(minutos > 100) {
+			conta +=  (minutos-100)* 2.0;
+		}
+		
+		
+			System.out.printf("valor a CONTA = R$ %.2f%n ", conta);
+			
+		
+		
+		
 		sc.close();
-	}
 
+	}
 }
